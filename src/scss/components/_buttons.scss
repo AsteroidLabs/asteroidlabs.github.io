@@ -27,6 +27,13 @@
     &::before {
         border-radius: 2px;
     }
+
+    &:hover {
+
+        &::before {
+            box-shadow: 0 8px 16px rgba(color(typography, 1), .25);
+        }
+    }
 }
 
 .button-shadow {
