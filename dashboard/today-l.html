@@ -14,7 +14,7 @@
     <meta name="MobileOptimized" content="320">
     <link rel="icon" href="./favicon.ico" type="image/x-icon"/>
     <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico" />
-    <!-- Generated: 2019-05-11 21:00:27 -0400 -->
+    <!-- Generated: 2019-05-11 21:30:03 -0400 -->
     <title>Long Term - Today - AsteroidLabs Dashboard</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,500,500i,600,600i,700,700i&amp;subset=latin-ext">
@@ -110,10 +110,10 @@
                   <div class="card-body p-3 text-center">
                     <div class="text-right text-green">
                       &nbsp;
-                      5.7%
+                      7.1%
                       <i class="fe fe-chevron-up"></i>
                     </div>
-                    <div class="h1 m-0">0.2591</div>
+                    <div class="h1 m-0">0.2630</div>
                     <div class="text-muted mb-4">Value (BTC)</div>
                   </div>
                 </div>
@@ -123,10 +123,10 @@
                   <div class="card-body p-3 text-center">
                     <div class="text-right text-green">
                       &nbsp;
-                      12.0%
+                      14.6%
                       <i class="fe fe-chevron-up"></i>
                     </div>
-                    <div class="h1 m-0">1811</div>
+                    <div class="h1 m-0">1866</div>
                     <div class="text-muted mb-4">Value (USD)</div>
                   </div>
                 </div>
@@ -137,7 +137,7 @@
                     <div class="text-right ">
                       &nbsp;
                     </div>
-                    <div class="h1 m-0">0.0148</div>
+                    <div class="h1 m-0">0.0187</div>
                     <div class="text-muted mb-4">Daily Earnings (BTC)</div>
                   </div>
                 </div>
@@ -148,7 +148,7 @@
                     <div class="text-right ">
                       &nbsp;
                     </div>
-                    <div class="h1 m-0">217.5</div>
+                    <div class="h1 m-0">272.1</div>
                     <div class="text-muted mb-4">Daily Earnings (USD)</div>
                   </div>
                 </div>
@@ -198,13 +198,18 @@
                       			data: {
                       				columns: [
                       				    // each columns data
-                      					['data1', 0.2890, 0.2829, 0.2864, 0.2716, 0.2650, 0.2377, 0.2443, 0.2591],
-                      					['data2', 1660.0, 1589.9, 1704.0, 1572.7, 1596.8, 1475.4, 1594.0, 1811.4]
+                      					['data1', 0.2890, 0.2829, 0.2864, 0.2716, 0.2650, 0.2377, 0.2443, 0.2630],
+                      					['data2', 1660.0, 1589.9, 1704.0, 1572.7, 1596.8, 1475.4, 1594.0, 1866.0]
                       				],
+                      				axes: {
+                      				    // each columns data
+                      					data1: 'y',
+                      					data2: 'y2'
+                      				},
                       				type: 'area-spline', // default type of chart
                       				colors: {
-                      'data1': "#f4d560",
-                      'data2': "#eb8279"
+                      					'data1': "#f4d560",
+                      					'data2': "#91ce54"
                       				},
                       				names: {
                       				    // name of each serie
@@ -218,6 +223,9 @@
                       					// name of each category
                       					categories: ['4', '5', '6', '7', '8', '9', '10', '11']
                       				},
+                      					y2: {
+                      						show: true
+                      					},
                       			},
                       			legend: {
                                       show: false, //hide legend
@@ -252,14 +260,14 @@
                       			data: {
                       				columns: [
                       				    // each columns data
-                      					['data1', -35.92, -31.29, -33.44, -56.62]
+                      					['data1', -35.65, -56.29, -31.27, -32.42]
                       				],
                       				type: 'bar', // default type of chart
                       				colors: {
-                      'data1': "#eb8279",
-                      'data2': "#eb8279",
-                      'data3': "#eb8279",
-                      'data4': "#eb8279"
+                      					'data1': "#eb8279",
+                      					'data2': "#eb8279",
+                      					'data3': "#eb8279",
+                      					'data4': "#eb8279"
                       				},
                       				names: {
                       				    // name of each serie
@@ -270,7 +278,7 @@
                       				x: {
                       					type: 'category',
                       					// name of each category
-                      					categories: ['XLMBTC', 'IOTABTC', 'ADABTC', 'AMBBTC']
+                      					categories: ['XLMBTC', 'AMBBTC', 'IOTABTC', 'ADABTC']
                       				},
                       			},
                       			bar: {
@@ -305,17 +313,17 @@
                       			data: {
                       				columns: [
                       				    // each columns data
-                      					['data1', 0.934153307632623],
-                      					['data2', 0.934153307632623],
-                      					['data3', 0.48405901380831073],
-                      					['data4', 97.8552722924887]
+                      					['data1', 0.9204732696143532],
+                      					['data2', 0.9204732696143532],
+                      					['data3', 0.48057093905149095],
+                      					['data4', 97.88159549792083]
                       				],
                       				type: 'donut', // default type of chart
                       				colors: {
-                      'data1': "#undefined",
-                      'data2': "#000000",
-                      'data3': "#536ee4",
-                      'data4': "#223142"
+                      					'data1': "#undefined",
+                      					'data2': "#000000",
+                      					'data3': "#536ee4",
+                      					'data4': "#223142"
                       				},
                       				names: {
                       				    // name of each serie
