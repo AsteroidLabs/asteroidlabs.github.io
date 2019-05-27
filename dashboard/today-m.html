@@ -14,7 +14,7 @@
     <meta name="MobileOptimized" content="320">
     <link rel="icon" href="./favicon.ico" type="image/x-icon"/>
     <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico" />
-    <!-- Generated: 2019-05-27 08:00:31 -0400 -->
+    <!-- Generated: 2019-05-27 09:00:26 -0400 -->
     <title>Medium Term - Today - AsteroidLabs Dashboard</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,500,500i,600,600i,700,700i&amp;subset=latin-ext">
@@ -108,10 +108,12 @@
               <div class="col-6 col-sm-4 col-lg-2">
                 <div class="card">
                   <div class="card-body p-3 text-center">
-                    <div class="text-right ">
+                    <div class="text-right text-red">
                       &nbsp;
+                      -0.5%
+                      <i class="fe fe-chevron-down"></i>
                     </div>
-                    <div class="h1 m-0">0.1250</div>
+                    <div class="h1 m-0">0.1243</div>
                     <div class="text-muted mb-4">Value (BTC)</div>
                   </div>
                 </div>
@@ -121,10 +123,10 @@
                   <div class="card-body p-3 text-center">
                     <div class="text-right text-green">
                       &nbsp;
-                      39.3%
+                      39.7%
                       <i class="fe fe-chevron-up"></i>
                     </div>
-                    <div class="h1 m-0">1090</div>
+                    <div class="h1 m-0">1096</div>
                     <div class="text-muted mb-4">Value (USD)</div>
                   </div>
                 </div>
@@ -135,7 +137,7 @@
                     <div class="text-right ">
                       &nbsp;
                     </div>
-                    <div class="h1 m-0">0.0000</div>
+                    <div class="h1 m-0">-0.0006</div>
                     <div class="text-muted mb-4">Daily Earnings (BTC)</div>
                   </div>
                 </div>
@@ -146,7 +148,7 @@
                     <div class="text-right ">
                       &nbsp;
                     </div>
-                    <div class="h1 m-0">428.8</div>
+                    <div class="h1 m-0">434.9</div>
                     <div class="text-muted mb-4">Daily Earnings (USD)</div>
                   </div>
                 </div>
@@ -192,8 +194,8 @@
                       			data: {
                       				columns: [
                       				    // each columns data
-                      					['data1', 0.1327, 0.1331, 0.1367, 0.1339, 0.1323, 0.1303, 0.1289, 0.1249, 0.1250],
-                      					['data2', 1051.8, 1054.3, 1089.4, 1027.6, 1041.0, 1049.3, 1034.9, 1092.2, 1090.2]
+                      					['data1', 0.1327, 0.1331, 0.1367, 0.1339, 0.1323, 0.1303, 0.1289, 0.1249, 0.1243],
+                      					['data2', 1051.8, 1054.3, 1089.4, 1027.6, 1041.0, 1049.3, 1034.9, 1092.2, 1096.3]
                       				],
                       				axes: {
                       				    // each columns data
@@ -254,12 +256,13 @@
                       			data: {
                       				columns: [
                       				    // each columns data
-                      					['data1', 2.08, -36.46]
+                      					['data1', 0.82, -24.05, -36.72]
                       				],
                       				type: 'bar', // default type of chart
                       				colors: {
                       					'data1': "#91ce54",
-                      					'data2': "#eb8279"
+                      					'data2': "#eb8279",
+                      					'data3': "#eb8279"
                       				},
                       				names: {
                       				    // name of each serie
@@ -270,7 +273,7 @@
                       				x: {
                       					type: 'category',
                       					// name of each category
-                      					categories: ['NEBLBTC', 'ADABTC']
+                      					categories: ['NEBLBTC', 'DASHBTC', 'ADABTC']
                       				},
                       			},
                       			bar: {
@@ -305,18 +308,16 @@
                       			data: {
                       				columns: [
                       				    // each columns data
-                      					['data1', 1.5222137001814253],
-                      					['data2', 3.152068153914974],
-                      					['data3', 2.2367736123544617],
-                      					['data4', 41.87546418284272],
-                      					['data5', 5.849862640714143],
-                      					['data6', 1.7909312452671762],
-                      					['data7', 33.90337964791994],
-                      					['data8', 1.5011207436142955],
-                      					['data9', 3.027175346357262],
-                      					['data10', 0.8119908071507956],
-                      					['data11', 0.8119908071507956],
-                      					['data12', 2.2743856057698544]
+                      					['data1', 1.5303537594929042],
+                      					['data2', 3.127147021193181],
+                      					['data3', 2.173380362292574],
+                      					['data4', 42.01859314983388],
+                      					['data5', 5.839151683965311],
+                      					['data6', 1.7910815305575252],
+                      					['data7', 33.94598189531111],
+                      					['data8', 1.4905165511525154],
+                      					['data9', 3.0167836180289167],
+                      					['data10', 2.2617500143948015]
                       				],
                       				type: 'donut', // default type of chart
                       				colors: {
@@ -329,9 +330,7 @@
                       					'data7': "#223142",
                       					'data8': "#827bba",
                       					'data9': "#64cac9",
-                      					'data10': "#undefined",
-                      					'data11': "#000000",
-                      					'data12': "#f3ef58"
+                      					'data10': "#f3ef58"
                       				},
                       				names: {
                       				    // name of each serie
@@ -344,9 +343,7 @@
                       					'data7': 'ADA',
                       					'data8': 'NEBL',
                       					'data9': 'ZIL',
-                      					'data10': 'MATIC',
-                      					'data11': 'MATIC',
-                      					'data12': 'PAX'
+                      					'data10': 'PAX'
                       				}
                       			},
                       			axis: {
