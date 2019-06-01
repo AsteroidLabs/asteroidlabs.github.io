@@ -14,7 +14,7 @@
     <meta name="MobileOptimized" content="320">
     <link rel="icon" href="./favicon.ico" type="image/x-icon"/>
     <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico" />
-    <!-- Generated: 2019-06-01 14:37:56 -0400 -->
+    <!-- Generated: 2019-06-01 15:03:20 -0400 -->
     <title>Medium Term - Week - AsteroidLabs Dashboard</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,500,500i,600,600i,700,700i&amp;subset=latin-ext">
@@ -114,7 +114,7 @@
                     <div class="text-right ">
                       &nbsp;
                     </div>
-                    <div class="h1 m-0">0.0608</div>
+                    <div class="h1 m-0">0.1259</div>
                     <div class="text-muted mb-4">Value (BTC)</div>
                   </div>
                 </div>
@@ -125,7 +125,7 @@
                     <div class="text-right ">
                       &nbsp;
                     </div>
-                    <div class="h1 m-0">518</div>
+                    <div class="h1 m-0">1072</div>
                     <div class="text-muted mb-4">Value (USD)</div>
                   </div>
                 </div>
@@ -195,8 +195,8 @@
                       			data: {
                       				columns: [
                       				    // each columns data
-                      					['data1', 0.1239, 0.1416, 0.1379, 0.1374, 0.1367, 0.1318, 0.1277, 0.1174, 0.1167, 0.1178, 0.1204, 0.1155, 0.1223, 0.1350, 0.1259, 0.1312, 0.1287, 0.1327, 0.1331, 0.1367, 0.1339, 0.1323, 0.1303, 0.1289, 0.1249, 0.1277, 0.1288, 0.1320, 0.1305, 0.1319, 0.0608],
-                      					['data2', 677.0, 816.5, 792.1, 772.0, 814.4, 763.3, 769.7, 728.9, 761.8, 837.2, 848.1, 913.0, 977.1, 1124.7, 944.0, 959.1, 993.0, 1051.8, 1054.3, 1089.4, 1027.6, 1041.0, 1049.3, 1034.9, 1092.2, 1123.5, 1114.9, 1137.0, 1081.3, 1128.1, 518.5]
+                      					['data1', 0.1239, 0.1416, 0.1379, 0.1374, 0.1367, 0.1318, 0.1277, 0.1174, 0.1167, 0.1178, 0.1204, 0.1155, 0.1223, 0.1350, 0.1259, 0.1312, 0.1287, 0.1327, 0.1331, 0.1367, 0.1339, 0.1323, 0.1303, 0.1289, 0.1249, 0.1277, 0.1288, 0.1320, 0.1305, 0.1319, 0.1259],
+                      					['data2', 677.0, 816.5, 792.1, 772.0, 814.4, 763.3, 769.7, 728.9, 761.8, 837.2, 848.1, 913.0, 977.1, 1124.7, 944.0, 959.1, 993.0, 1051.8, 1054.3, 1089.4, 1027.6, 1041.0, 1049.3, 1034.9, 1092.2, 1123.5, 1114.9, 1137.0, 1081.3, 1128.1, 1072.2]
                       				],
                       				axes: {
                       				    // each columns data
@@ -249,6 +249,46 @@
                         <div id="chart-bar-stacked" style="height: 16rem;"></div>
                       </div>
                     </div>
+                    <script>
+                      require(['c3', 'jquery'], function(c3, $) {
+                      	$(document).ready(function(){
+                      		var chart = c3.generate({
+                      			bindto: '#chart-bar-stacked', // id of chart wrapper
+                      			data: {
+                      				columns: [
+                      				    // each columns data
+                      					['data1', -22.04]
+                      				],
+                      				type: 'bar', // default type of chart
+                      				colors: {
+                      					'data1': "#eb8279"
+                      				},
+                      				names: {
+                      				    // name of each serie
+                      					'data1': 'Trade Gains in %'
+                      				}
+                      			},
+                      			axis: {
+                      				x: {
+                      					type: 'category',
+                      					// name of each category
+                      					categories: ['DASHBTC']
+                      				},
+                      			},
+                      			bar: {
+                      				width: 16
+                      			},
+                      			legend: {
+                                      padding: 16,
+                      			},
+                      			padding: {
+                      				bottom: 16,
+                      				top: 0
+                      			},
+                      		});
+                      	});
+                      });
+                    </script>
                   </div>
                   <div class="col-6">
                     <div class="card">
@@ -267,27 +307,33 @@
                       			data: {
                       				columns: [
                       				    // each columns data
-                      					['data1', 3.732883425187645],
-                      					['data2', 16.617778438749962],
-                      					['data3', 30.735450981803318],
-                      					['data4', 44.1173559543856],
-                      					['data5', 4.78269079723848]
+                      					['data1', 14.828821241858673],
+                      					['data2', 8.023313171647386],
+                      					['data3', 21.28514026029266],
+                      					['data4', 1.7970032553623776],
+                      					['data5', 2.312669910852604],
+                      					['data6', 51.55317683586767],
+                      					['data7', 51.55317683586767]
                       				],
                       				type: 'donut', // default type of chart
                       				colors: {
-                      					'data1': "#67bbf6",
+                      					'data1': "#f8a642",
                       					'data2': "#f5c44f",
-                      					'data3': "#f8a642",
-                      					'data4': "#32a3ec",
-                      					'data5': "#f3ef58"
+                      					'data3': "#32a3ec",
+                      					'data4': "#67bbf6",
+                      					'data5': "#f3ef58",
+                      					'data6': "#undefined",
+                      					'data7': "#000000"
                       				},
                       				names: {
                       				    // name of each serie
-                      					'data1': 'GXS',
+                      					'data1': 'BTC',
                       					'data2': 'BNB',
-                      					'data3': 'BTC',
-                      					'data4': 'DASH',
-                      					'data5': 'PAX'
+                      					'data3': 'DASH',
+                      					'data4': 'GXS',
+                      					'data5': 'PAX',
+                      					'data6': 'ONE',
+                      					'data7': 'ONE'
                       				}
                       			},
                       			axis: {
