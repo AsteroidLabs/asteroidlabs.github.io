@@ -14,7 +14,7 @@
     <meta name="MobileOptimized" content="320">
     <link rel="icon" href="./favicon.ico" type="image/x-icon"/>
     <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico" />
-    <!-- Generated: 2019-06-01 23:00:38 -0400 -->
+    <!-- Generated: 2019-06-02 00:01:19 -0400 -->
     <title>Medium Term - Today - AsteroidLabs Dashboard</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,500,500i,600,600i,700,700i&amp;subset=latin-ext">
@@ -113,10 +113,10 @@
                   <div class="card-body p-3 text-center">
                     <div class="text-right text-red">
                       &nbsp;
-                      -13.5%
+                      -0.8%
                       <i class="fe fe-chevron-down"></i>
                     </div>
-                    <div class="h1 m-0">0.1162</div>
+                    <div class="h1 m-0">0.1153</div>
                     <div class="text-muted mb-4">Value (BTC)</div>
                   </div>
                 </div>
@@ -126,10 +126,10 @@
                   <div class="card-body p-3 text-center">
                     <div class="text-right text-red">
                       &nbsp;
-                      -13.4%
+                      -0.7%
                       <i class="fe fe-chevron-down"></i>
                     </div>
-                    <div class="h1 m-0">995</div>
+                    <div class="h1 m-0">988</div>
                     <div class="text-muted mb-4">Value (USD)</div>
                   </div>
                 </div>
@@ -140,7 +140,7 @@
                     <div class="text-right ">
                       &nbsp;
                     </div>
-                    <div class="h1 m-0">-0.0157</div>
+                    <div class="h1 m-0">-0.0009</div>
                     <div class="text-muted mb-4">Daily Earnings (BTC)</div>
                   </div>
                 </div>
@@ -151,7 +151,7 @@
                     <div class="text-right ">
                       &nbsp;
                     </div>
-                    <div class="h1 m-0">-133.2</div>
+                    <div class="h1 m-0">-6.7</div>
                     <div class="text-muted mb-4">Daily Earnings (USD)</div>
                   </div>
                 </div>
@@ -159,10 +159,12 @@
               <div class="col-6 col-sm-4 col-lg-2">
                 <div class="card">
                   <div class="card-body p-3 text-center">
-                    <div class="text-right ">
+                    <div class="text-right text-green">
                       &nbsp;
+                      80.0%
+                      <i class="fe fe-chevron-up"></i>
                     </div>
-                    <div class="h1 m-0">3</div>
+                    <div class="h1 m-0">15</div>
                     <div class="text-muted mb-4">Trades</div>
                   </div>
                 </div>
@@ -170,10 +172,12 @@
               <div class="col-6 col-sm-4 col-lg-2">
                 <div class="card">
                   <div class="card-body p-3 text-center">
-                    <div class="text-right ">
+                    <div class="text-right text-green">
                       &nbsp;
+                      12.8%
+                      <i class="fe fe-chevron-up"></i>
                     </div>
-                    <div class="h1 m-0">28.9 m</div>
+                    <div class="h1 m-0">33.2 m</div>
                     <div class="text-muted mb-4">Selling Time Avg</div>
                   </div>
                 </div>
@@ -197,8 +201,8 @@
                       			data: {
                       				columns: [
                       				    // each columns data
-                      					['data1', 0.1289, 0.1249, 0.1277, 0.1288, 0.1320, 0.1305, 0.1319, 0.1162],
-                      					['data2', 1034.9, 1092.2, 1123.5, 1114.9, 1137.0, 1081.3, 1128.1, 994.9]
+                      					['data1', 0.1289, 0.1249, 0.1277, 0.1288, 0.1320, 0.1305, 0.1319, 0.1162, 0.1153],
+                      					['data2', 1034.9, 1092.2, 1123.5, 1114.9, 1137.0, 1081.3, 1128.1, 994.9, 988.1]
                       				],
                       				axes: {
                       				    // each columns data
@@ -220,7 +224,7 @@
                       				x: {
                       					type: 'category',
                       					// name of each category
-                      					categories: ['25', '26', '27', '28', '29', '30', '31', '1']
+                      					categories: ['25', '26', '27', '28', '29', '30', '31', '1', '2']
                       				},
                       					y2: {
                       						show: true
@@ -259,11 +263,13 @@
                       			data: {
                       				columns: [
                       				    // each columns data
-                      					['data1', -22.95]
+                      					['data1', -23.03, -8.79, -8.79]
                       				],
                       				type: 'bar', // default type of chart
                       				colors: {
-                      					'data1': "#eb8279"
+                      					'data1': "#eb8279",
+                      					'data2': "#eb8279",
+                      					'data3': "#eb8279"
                       				},
                       				names: {
                       				    // name of each serie
@@ -274,7 +280,7 @@
                       				x: {
                       					type: 'category',
                       					// name of each category
-                      					categories: ['DASHBTC']
+                      					categories: ['DASHBTC', 'GXSBTC', 'GXSBTC']
                       				},
                       			},
                       			bar: {
@@ -309,30 +315,30 @@
                       			data: {
                       				columns: [
                       				    // each columns data
-                      					['data1', 1.946667470350682],
-                      					['data2', 22.80357878696633],
-                      					['data3', 16.07573654888659],
-                      					['data4', 8.630448265304791],
-                      					['data5', 2.4924590878866746],
-                      					['data6', 48.06380338510415],
-                      					['data7', 48.06380338510415]
+                      					['data1', 16.203914115715413],
+                      					['data2', 8.691799962747572],
+                      					['data3', 22.96240354073445],
+                      					['data4', 1.9592841477830976],
+                      					['data5', 2.5070917195305418],
+                      					['data6', 47.883695594106804],
+                      					['data7', 47.883695594106804]
                       				],
                       				type: 'donut', // default type of chart
                       				colors: {
-                      					'data1': "#67bbf6",
-                      					'data2': "#32a3ec",
-                      					'data3': "#f8a642",
-                      					'data4': "#f5c44f",
+                      					'data1': "#f8a642",
+                      					'data2': "#f5c44f",
+                      					'data3': "#32a3ec",
+                      					'data4': "#67bbf6",
                       					'data5': "#f3ef58",
                       					'data6': "#undefined",
                       					'data7': "#000000"
                       				},
                       				names: {
                       				    // name of each serie
-                      					'data1': 'GXS',
-                      					'data2': 'DASH',
-                      					'data3': 'BTC',
-                      					'data4': 'BNB',
+                      					'data1': 'BTC',
+                      					'data2': 'BNB',
+                      					'data3': 'DASH',
+                      					'data4': 'GXS',
                       					'data5': 'PAX',
                       					'data6': 'ONE',
                       					'data7': 'ONE'
